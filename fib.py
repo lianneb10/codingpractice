@@ -38,5 +38,16 @@ def fib(n):
 
 print(fib(10))
 
-for i in range (1,10):
+for i in range(1,10):
     print('the fib of ' +  str(i) + ' is ' + str(fib(i)))
+
+def power(n):
+    for i in range(0,n):
+        print(2**i)
+        if n == 2**i:
+            return True
+        if 2**i > n:
+            return False
+    return False
+
+print(power(1000000))
