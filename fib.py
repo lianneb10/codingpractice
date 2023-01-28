@@ -51,3 +51,17 @@ def power(n):
         i=i+1
 
 print(power(1000000))
+
+# recursion
+def recursiveTwo(n):
+    if n <= 0:
+        return False
+    elif n == 2:
+        return True
+    elif n == 1: 
+        return True
+        # % returns remainder after dividing, number is odd if the remainder is 1
+    elif n%2 == 1:
+        return False
+    else: 
+        return recursiveTwo(n/2)
