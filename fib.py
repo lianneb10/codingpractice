@@ -52,7 +52,7 @@ def power(n):
 
 print(power(1000000))
 
-# recursion
+# recursion for Two
 def recursiveTwo(n):
     if n <= 0:
         return False
@@ -65,3 +65,16 @@ def recursiveTwo(n):
         return False
     else: 
         return recursiveTwo(n/2)
+
+# recursion for Three
+def recursiveThree(n):
+    if n <= 0:
+        return False
+    elif n == 1:
+        return True
+    # if n is not divisible by 3, then n is not a power of 3
+    elif n%3 != 0:
+        return False
+    else:
+        return recursiveThree(n/3)
+    
