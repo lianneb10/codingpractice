@@ -27,17 +27,19 @@ for i in range(len(lineArray)) :
 
 sentence = "It was great that I threw the strange thing out the window for real"
 
-sentence_replacements = [
-  ["threw", "yeeted"],
-  ["great", "bussin"],
-  ["strange", "sus"],
-  ["for real", "no cap"]
-]
+replacements = """
 
-for i in range(len(sentence_replacements)) : 
-    pair=sentence_replacements[i]
-    oldWord=pair[0]
-    newWord=pair[1]
+threw becomes yeet
+great becomes bussin
+strange becomes sus
+for real becomes no cap
+
+"""
+newReplace=replacements.strip().split('\n')
+for i in range(len(newReplace)) : 
+    split=newReplace[i].strip().split(' becomes ')
+    oldWord=split[0]
+    newWord=split[1]
     sentence = sentence.replace(oldWord, newWord)
     
 print(sentence)
