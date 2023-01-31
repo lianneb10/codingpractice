@@ -43,3 +43,4 @@ for i in range(len(newReplace)) :
     sentence = sentence.replace(oldWord, newWord)
     
 print(sentence)
+
